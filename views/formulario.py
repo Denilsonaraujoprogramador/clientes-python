@@ -1,4 +1,4 @@
-import validacao
+import controllers.validacao as validacao
 #from validacao import*
 
 # View - informação que o usuário irá solicitar.

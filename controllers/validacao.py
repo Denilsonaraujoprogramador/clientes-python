@@ -1,4 +1,4 @@
-import banco
+import models.banco as banco
 #from banco import*
 
 # Controller - irá relalizar a validação a informação solicitada pelo usuário e oretorno do Banco de dados.
