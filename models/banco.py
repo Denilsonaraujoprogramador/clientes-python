@@ -2,9 +2,22 @@
 
 # Model - Infomação que virá da meu Banco de dados(BD) através de uma request do tipo GET(requisição).
 def model_usuario():
-    usuario_BD = 'joao'
+    arquivo = open("models\\dados.txt","r+")
+    conteudo = arquivo.readlines()
+    for linha in conteudo:
+        usuario_senha = linha.split(";")
+    
+    usuario_BD = usuario_senha[0]
     return usuario_BD
 
 def model_senha():
-    senha_BD = '123'
+    arquivo = open("models\\dados.txt","r+")
+    conteudo = arquivo.readlines()
+    for linha in conteudo:
+        usuario_senha = linha.split(";")
+    
+    senha_BD = usuario_senha[1]
     return senha_BD
+
+print(model_usuario())
+print(model_senha())
