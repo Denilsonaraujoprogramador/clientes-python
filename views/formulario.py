@@ -2,8 +2,8 @@
 
 # View - informação que o usuário irá solicitar.
 def formulario_login():
-    usuario_digitado = input("Informa o seu usuário: ")
-    senha_digitado = input("informa a sua senha: ")
+    usuario_digitado = input("Informe o seu usuário: ")
+    senha_digitado = input("informe a sua senha: ")
     usuario_completo = [usuario_digitado, senha_digitado]
     return usuario_completo
 
@@ -22,7 +22,7 @@ def menu():
     return opcao
 
 def cadastro_cliente():
-    nome = input("Informa o nome: ")
-    telefone = input("Informa o telefone: ")
+    nome = input("Informe o nome: ")
+    telefone = input("Informe o telefone: ")
     cliente=[nome,telefone]
     return cliente
